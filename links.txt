@@ -1,0 +1,4 @@
+http://leg.ufpr.br/~walmes/cursoR/data-vis/index.html
+https://r-graph-gallery.com/
+https://r-graph-gallery.com/ggplot2-package.html
+

@@ -1,0 +1,244 @@
+---
+title: \textbf{Coordenadoria de Estatística e Ciência de Dados}
+subtitle: PROPLAD/CECD
+author: Prof. Me. Lineu Alberto Cavazani de Freitas
+date: ""
+institute: |
+ |
+ | Pró-Reitoria de Planejamento e Dados (PROPLAD)
+ | Coordenadoria de Estatística e Ciência de Dados (CECD)
+ |
+ | Departamento de Estatística
+ | Laboratório de Estatística e Geoinformação
+graphics: yes
+classoption: [serif, professionalfont, usenames, dvipsnames, aspectratio = 169]
+# bibliography: references.bib
+# csl: ../config/ABNT_UFPR_2011-Mendeley.csl
+output:
+  beamer_presentation:
+    fig_caption: yes
+    fig_crop: no
+    highlight: haddock
+    includes:
+      # NOTE: background, color theme and logos are defined in `preamble-rmd-settings.tex`.
+      in_header: [config/preamble-settings-rmd.tex, config/preamble-global.tex, config/preamble-chunk-rmd.tex, config/preamble-commands.tex]
+    keep_tex: yes
+# http://rmarkdown.rstudio.com/beamer_presentation_format.html
+---
+
+```{r, include = FALSE}
+source("./config/setup.R")
+```
+
+
+# Pró-Reitoria de Planejamento e Dados (PROPLAD)
+
+## Pró-Reitoria de Planejamento e Dados (PROPLAD)
+
+ - Tem como objetivo \textbf{desenvolver soluções e serviços voltados à organização e análise de dados institucionais}, proporcionando evidências confiáveis para apoiar as unidades da instituição na tomada de decisão e no planejamento estratégico. 
+
+\vspace{0.5cm}
+ 
+ - Busca, ainda, alinhar essas ações ao Plano de Desenvolvimento Institucional (PDI), promovendo o cumprimento da missão e visão institucionais, sempre em consonância com seus valores.
+ 
+
+## Pró-Reitoria de Planejamento e Dados (PROPLAD)
+
+Composição
+
+1. Unidade de Apoio Administrativo.
+2. Unidade de Controle e Execução Orçamentária.
+3. Coordenadoria de Planejamento e Desenvolvimento Institucional.
+4. Coordenadoria de Estratégia de Tecnologia da Informação e Comunicação.
+5. Coordenadoria de Estatística e Ciência de Dados.
+6. Coordenadoria de Urbanismo Territorial e Ambiental.
+7. Coordenadoria de Serviços e Infraestrutura de TIC.
+8. Coordenadoria de Software e Gestão de Dados.
+9. Agência de Tecnologia de Informação e Comunicação.
+
+## Pró-Reitoria de Planejamento e Dados (PROPLAD)
+
+Composição
+
+1. Unidade de Apoio Administrativo.
+2. Unidade de Controle e Execução Orçamentária.
+3. Coordenadoria de Planejamento e Desenvolvimento Institucional.
+4. Coordenadoria de Estratégia de Tecnologia da Informação e Comunicação.
+5. \textbf{Coordenadoria de Estatística e Ciência de Dados.}
+6. Coordenadoria de Urbanismo Territorial e Ambiental.
+7. Coordenadoria de Serviços e Infraestrutura de TIC.
+8. Coordenadoria de Software e Gestão de Dados.
+9. Agência de Tecnologia de Informação e Comunicação.
+
+# Coordenadoria de Estatística e Ciência de Dados (CECD)
+
+## Coordenadoria de Estatística e Ciência de Dados (CECD)
+
+\textbf{Resumo}
+
+
+ - Unidade estratégica composta por \textbf{Estatísticos} e \textbf{Analistas de Dados}.
+    
+ - Responsável por fornecer análises de dados e produtos baseados em dados para apoiar a tomada de decisão institucional.
+
+
+\textbf{Visão}
+
+ - Ser um centro de excelência em análise e ciência de dados, reconhecido nacionalmente por sua contribuição para a melhoria da gestão universitária e a inovação acadêmica.
+
+## Objetivos da CECD
+
+ - \textbf{Melhorar a tomada de decisão}: fornecer análises especializadas para apoiar a gestão estratégica com base em dados precisos.
+
+\vspace{0.1 cm}
+
+ - \textbf{Fomentar inovação}: desenvolver soluções baseadas em Estatística e Ciência de Dados para melhorar a eficiência operacional na gestão da universidade pública.
+
+\vspace{0.1 cm}
+
+ - \textbf{Desenvolver capacidades analíticas}: capacitar servidores e estudantes em métodos estatísticos, análise e ciência de dados.
+
+\vspace{0.1 cm}
+
+ - \textbf{Ampliar a transparência}: auxiliar a disponibilizar dados institucionais de forma clara e acessível.
+
+\vspace{0.1 cm}
+
+ - \textbf{Fortalecer a governança de dados}: apoiar nas medidas que visam garantir a segurança, privacidade e integridade dos dados institucionais.
+
+\vspace{0.1 cm}
+
+ - \textbf{Contribuir com a pesquisa}: subsidiar acadêmicos e pesquisadores com dados relevantes à pesquisa científica sobre a academia.
+
+## Princípios da CECD
+
+ - \textbf{Rigor metodológico}: garantir a qualidade e precisão das análises.
+
+\vspace{0.1 cm}
+
+ - \textbf{Neutralidade e imparcialidade}: manter objetividade nas análises.
+
+\vspace{0.1 cm}
+
+ - \textbf{Transparência e acessibilidade}: disponibilizar dados e resultados de forma clara.
+
+\vspace{0.1 cm}
+
+ - \textbf{Ética, confidencialidade e segurança}: proteger dados sensíveis, respeitar privacidade e direitos individuais.
+
+\vspace{0.1 cm}
+
+ - \textbf{Inovação e atualização}: estar à frente das tendências em Análise de Dados, Estatística, Ciência de Dados e Inteligência Artificial.
+
+\vspace{0.1 cm}
+
+ - \textbf{Colaboração interdisciplinar}: trabalhar com diversas áreas da universidade.
+
+## Atribuições da CECD
+
+1. Análise de dados para desenvolver indicadores e métricas institucionais.
+
+\vspace{0.1 cm}
+
+2. Elaboração de relatórios e dashboards.
+
+\vspace{0.1 cm}
+
+3. Suporte técnico para unidades, pesquisas e projetos.
+
+\vspace{0.1 cm}
+
+4. Apoio ao planejamento estratégico e orçamentário.
+
+\vspace{0.1 cm}
+
+5. Desenvolvimento de modelos para fins de explicação e predição.
+
+
+## Atividades da CECD
+
+1. \textbf{Essenciais}: coletar e analisar dados, publicar relatórios, auxiliar na comunicação de resultados.
+
+\vspace{0.1 cm}
+
+2. \textbf{Importantes}: auxiliar na manutenção de portais de dados abertos, promover treinamentos, capacitar servidores.
+
+\vspace{0.1 cm}
+
+3. \textbf{Estratégicas}: parcerias com instituições, monitoramento de tendências em Análise de dados, Estatística, Aprendizado de Máquina e Inteligência Artificial.
+
+
+## Funções da CECD
+
+1. \textbf{Análise e Inteligência}: indicadores, análises descritivas/preditivas/prescritivas, relatórios e dashboards.
+
+\vspace{0.2 cm}
+
+2. \textbf{Transparência e Comunicação}: portal de dados abertos, relatórios anuais, comunicação de resultados, auditorias e validação de dados.
+
+\vspace{0.2 cm}
+
+3. \textbf{Suporte Estratégico}: planejamento, avaliação de políticas públicas, integração com outras áreas.
+
+\vspace{0.2 cm}
+
+4. \textbf{Capacitação e Inovação}: treinamentos (equipe e servidores), parcerias (graduação, pós graduação e externos), inovação em ciência de dados.
+
+## Demandas confirmadas para a CECD
+
+ - \textbf{Relatório de Gestão}: reunir informações das Pró-Reitorias e superintendências quanto à contratos, valores desembolsados, patrimônio da universidade, entre outras. Prazo 30/03/2025, establecido pelo TCU.
+
+\vspace{0.2 cm}
+
+ - \textbf{Censo da Educação Superior}: levantamento das informações dos alunos de graduação para o sistema CENSUP do INEP. O censo impacta diretamente no orçamento da Universidade. Prazo 04/04/2025 estabelecido pelo INEP.
+
+\vspace{0.2 cm}
+
+ - \textbf{Comissão Própria de Avaliação (CPA)}: apoio na realização de análises estatísticas dos dados apurados pelos questionários aplicados pela Comissão. Prazo deliberado internamente.
+
+\vspace{0.2 cm}
+
+ - Dados sobre internacionalização e rankings.
+
+## Outras demandas
+
+ - Montagem da equipe, avaliação das capacidades técnicas, distribuição de demandas.
+
+\vspace{0.2 cm}
+
+ - Definição da rotina da Coordenadoria (reuniões de equipe, gerenciamento de projetos, capacitação, teletrabalho, ferramentas de comunicação).
+ 
+\vspace{0.2 cm}
+
+ - Escrita do regimento da Pró-Reitoria e regimento da Coordenadoria (devem passar pelo COPLAD ao longo do primeiro semestre).
+
+\vspace{0.2 cm}
+
+ - Levantamento de demandas associadas a dados nas Pró-Reitorias e superintendências para avaliação de prioridades e viabilidade técnica.
+
+\vspace{0.2 cm}
+
+ - Desenvolvimento da identidade visual e página web para a CECD.
+
+## Informações adicionais
+
+ - Local físico: Rua XV de Novembro, 1299 - Sobreloja.
+
+\vspace{0.2 cm} 
+
+ - A nomeação do reitor acontece no dia 17/12.
+
+\vspace{0.2 cm}
+
+ - Após a nomeação o regimento geral da reitoria detalhando as Pró-Reitorias, UAA, UCEOs e coordenadorias passa pelo COPLAD.
+
+\vspace{0.2 cm}
+
+ - As informações são lançadas no SIORG.
+
+\vspace{0.2 cm}
+
+ - No decorrer da semana devem ser feitas as nomeações de pró-reitores e coordenadores.
+
+# Membros confirmados
+
