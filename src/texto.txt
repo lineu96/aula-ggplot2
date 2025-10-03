@@ -1,0 +1,128 @@
+
+---
+
+ANÁLISE EXPLORATÓRIA
+
+A Análise Exploratória de Dados (AED) não é apenas um conjunto de técnicas; é um processo de investigação. É a primeira e mais importante etapa em qualquer projeto que envolva análise de dados. Consiste de tabelas, gráficos e resumos numéricos.
+
+Em geral, começamos classificando os dados por tipos (qualitativos, quantitativos, etc). Aprendemos a organizar dados brutos em tabelas de frequência e a visualizá-los por meio de gráficos como barras, histogramas, gráficos de densidade e boxplots. Essas ferramentas iniciais nos permitem entender a distribuição de cada variável individualmente.
+
+Também é possível usar medidas resumo, que nos permitem descrever numericamente os dados: Medidas de Posição Central para identificar o "centro" dos dados, Medidas de Posição Relativa para entender a posição de valores específicos e Medidas de Dispersão para medir o espalhamento dos dados.
+
+Estendendo as ideias podemos avançar para análises bivariadas que nos permitem explorar a associação entre pares de variáveis com ferramentas como tabelas de contingência e gráficos de barras empilhadas/agrupadas, diagrama de dispersão, coeficiente de correlação. Para a combinação quantitativa x qualitativa, podemos usar medidas resumo e gráficos para cada um dos diferentes grupos. E outras extensões surgem para análises que envolvem mais de 2 variáveis.
+
+A Análise Exploratória de Dados é uma habilidade fundamental na era dos dados e acessível a diferentes públicos graças ao desenvolvimento computacional. Algumas considerações:
+
+- Lembre-se que uma análise exploratória robusta também é sua primeira linha de defesa contra dados de baixa qualidade. Durante a AED, você identificará falhas, valores ausentes e inconsistências que, se não tratadas, poderiam comprometer qualquer análise futura.
+
+- É muito importante entender a diferença da análise que você faz para si mesmo daquela que é feita para comunicar com o público. A análise para você é um processo de investigação pessoal, frequentemente desordenado, focado em descobrir padrões e avaliar hipóteses de interesse. A análise para os outros é focada na comunicação, devemos selecionar os insights mais relevantes e apresentá-los de forma clara e objetiva. Muitas vezes não apresentamos nem metade daquilo que exploramos o que pode gerar um sentimento de frustração por sentir que o público não está vendo todo o trabalho realizado. A verdade é que o público não está interessado em saber o quanto você dedicou naquela análise, eles querem apenas as informações relevantes para tirar conclusões e precisamos saber lidar com isso.
+
+---
+
+VISUALIZAÇÃO DE DADOS
+
+Visualização de dados trata da comicação de forma visual de dados. Segundo Edward Tufte, para visualização de dados “Excelência gráfica é a que oferece ao espectador o maior número de ideias no menor tempo possível, com menos tinta, no menor espaço”.
+
+1 Relação da visualização com cognição e visão
+
+As visualizações só serão efetivas quando operarem sob princípios que respeitem a percepção visual e a cognição. Portanto, uma boa visualização de dados deve ser criada de modo a favorecer a percepção e cognição humana.
+
+2 Princípios Gestalt
+
+Esses princípios determinam quais elementos são mais eficazes em uma determinada situação e quais influenciam na percepção visual. Eles possibilitam definir qual a melhor maneira de direcionar a atenção dos espectador para determinados focos. Os princípios de Gestalt são: proximidade, similaridade, continuidade, fechamento, figura-fundo, região comum e ponto focal.
+
+3 Elementos visuais
+
+Os elementos visuais são um conjunto que estruturam a percepção visual e que funcionam como ferramenta de transmissão de informação, podendo ser utilizada como forma de ensino e aprendizagem. Elementos visuais básicos podem ser aplicados de modo que as diferenças sejam rapidamente identificadas. Espessura, altura, orientação, tamanho, forma, cor, contorno, sombra, posição, etc
+
+---
+
+Visualização de dados no R
+
+No R, podemos pensar em 4 frentes principais para visualização:
+
+O pacote graphics.
+O pacote lattice.
+O pacote ggplot2.
+Pacotes para gráficos interativos (e.g., plotly, leaflet).
+
+O graphics é o mais primitivo. O lattice por muito tempo foi o principal pacote para visualização com mais alternativas do que o graphics.
+
+O pacote ggplot2 se destaca por ser Baseado na Grammar of Graphics, o que garante um modelo mental mais claro, coerente e com boas práticas de design.
+
+--- 
+
+A Gramática dos Gráficos
+
+A Gramática dos Gráficos (The Grammar of Graphics - GoG), popularizada pelo livro de Leland Wilkinson, é um arcabouço teórico que descreve os componentes de um gráfico. Ela não é sobre um software, mas sim uma linguagem que define como os elementos visuais representam os dados.
+
+A grande ideia da Gramática dos Gráficos é que qualquer gráfico pode ser decomposto em uma série de componentes independentes e ortogonais. Isso garante que, ao combinar esses elementos de forma modular, podemos criar qualquer gráfico, do mais simples ao mais complexo, de forma lógica e repetível.
+
+Os principais componentes da GoG que formam o modelo mental do ggplot2 são:
+
+Dados: O conjunto de dados a ser visualizado.
+
+Mapeamentos: O mapeamento de variáveis, ou seja, que variável será representada onde (quem vai no eixo x, quem vai no eixo y, quem vai ser representado como tamanho, como forma, como cor).
+
+Geometrias: As formas visuais usadas para representar os dados (pontos, barras, linhas, etc).
+
+Transformações Estatísticas: Os cálculos estatísticos que transformam os dados antes de serem visualizados (contagens, medidas resumo, etc)
+
+Sistemas de Coordenadas: O espaço em que os dados são mapeados (cartesiano, polar).
+
+Facetas: Permitem dividir um gráfico em subgráficos, baseados nos valores de uma variável.
+
+A GoG fornece a ideia de que uma visualização de dados é feita em camadas (layers). Pensando nessas camadas, obtemos visualizações com um modelo mental mais claro, que garantem flexibilidade e boas práticas de visualização.
+
+---
+
+ggplot2
+
+O pacote ggplot2, criado por Hadley Wickham, é a principal e mais popular implementação da Gramática dos Gráficos de Leland Wilkinson na linguagem R.
+
+No ggplot2, os gráficos são construídos aditivamente, camada por camada, usando o operador +
+
+ggplot(data) + geom_(aes(variáveis)) + camadas adicionais...
+
+data: os dados fornecem os ingredientes principais para a criação dos gráficos, sendo a primeira camada do ggplot2. Normalmente, uma linha para cada observação.
+
+aesthetics: a estética (aes()) torna os dados visíveis. Os principais atributos são expostos abaixo.
+- x, y: variáveis
+- color: colore as linhas geométricas
+- fill: preenche as geometrias
+- group: agrupa dados com base em grupos.
+- shape: define a forma (ponto, triângulos)
+- linetype: Define o tipo de linha (sólida, pontilhada)
+- size: Define o tamanho dos elementos.
+- alfa: altera a transparência.
+
+Geometria (geom_()) fornece formas aos dados. Algumas das principais geometrias são expostas abaixo.
+- geom_point(): nuvem de pontos
+- geom_line(): linhas conectando pontos
+- geom_path(): linhas conectando pontos na sequência de aparência
+- geom_boxplot(): box plot para variáveis categóricas
+- geom_bar(): gráficos de barras para eixo x categórico
+- geom_histogram(): histograma para eixo x contínuo
+- geom_violin(): kernel de distribuição de dispersão de dados
+- geom_smooth(): linha de função baseada em dados
+
+Facetas: divide as figuras entre painéis:
+- facet_wrap() agrupa gráficos em diferentes frames (facetas) com base em uma única variável;
+- facet_grid() faz o mesmo que acima, mas pode assumir variáveis diferentes.
+
+Estatísticas: simples calculadas sobre os dados. Funções do tipo stat_*() realizam cálculos como médias, contagens, modelos lineares e outros resumos estatísticos de dados.
+
+Coordenadas: estabelece regras de representação para a exibição dos dados
+- coord_cartesian()para o plano cartesiano;
+- coord_polar()para gráficos circulares;
+- coord_map()para as diferentes projeções do mapa.
+
+Temas: (theme_*()) permite ajustar o visual geral com precisão.
+- Fontes;
+- Cor de fundo;
+- A largura das linhas;
+- Tamanho e cor dos rótulos dos eixos;
+- e outras propriedades.
+
+
+
