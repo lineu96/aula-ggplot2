@@ -83,7 +83,9 @@ barras_verticais <- ggplot(mpg, aes(x = class)) +
 barras_verticais
 
 # Versão Básica Horizontal: Adição de 'coord_flip()' à versão básica
-barras_horizontais <- p_bar_vert_basico + coord_flip()
+barras_horizontais <- ggplot(mpg, aes(x = class)) +
+  geom_bar() + 
+  coord_flip()
 barras_horizontais
 
 # Versão Customizada: Mapeamento de 'fill' (estética) e 'theme'
@@ -193,7 +195,7 @@ serie_temporal <- data.frame(
 )
 
 # Versão Básica: geom_line (Mapeamento X e Y)
-linhas <- ggplot(df_ts, aes(x = Ano, y = Valor)) +
+linhas <- ggplot(serie_temporal, aes(x = Ano, y = Valor)) +
   geom_line()
 linhas 
 # A linha está conectando todos os pontos!
